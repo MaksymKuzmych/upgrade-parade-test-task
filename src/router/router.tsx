@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router';
 
-import { NotFound, ProductList } from '../screens';
+import { NotFound, ProductList } from '../pages';
 
 export const Router = () => {
   return (

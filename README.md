@@ -62,8 +62,8 @@ A simplified view of the project’s folder structure:
 
 ```
 upgrade-parade-test-task/
-├── .github                # GitHub Action workflows for CI/CD
-├── .husky                 # Husky configuration for Git hooks
+├── .github              # GitHub Action workflows for CI/CD
+├── .husky               # Husky configuration for Git hooks
 └── src
     ├── assets           # Images and icons
     ├── components       # Reusable UI components (e.g., Table, Pagination, Search)
