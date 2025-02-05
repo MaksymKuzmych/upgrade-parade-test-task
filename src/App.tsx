@@ -1,16 +1,20 @@
-import { Route, Routes } from 'react-router';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
-import { ProductList } from './screens';
+import { Router } from './router';
+import { Header, Navigation } from './components';
 
 const queryClient = new QueryClient();
 
 const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
-      <Routes>
-        <Route path='/' element={<ProductList />} />
-      </Routes>
+      <Header />
+      <div className='flex flex-1'>
+        <aside className='bg-gray-700 px-5 py-8'>
+          <Navigation />
+        </aside>
+        <Router />
+      </div>
     </QueryClientProvider>
   );
 };

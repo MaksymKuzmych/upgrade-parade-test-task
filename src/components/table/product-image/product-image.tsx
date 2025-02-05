@@ -7,7 +7,7 @@ interface IProductImageProps {
 
 export const ProductImage = ({ alt, src }: IProductImageProps) => {
   return (
-    <div className='mx-auto h-12 w-12 overflow-hidden'>
+    <div className='mx-auto h-13 w-13 overflow-hidden'>
       <img src={src || ImagePlaceholder} alt={alt} className='h-full w-full object-cover' />
     </div>
   );
