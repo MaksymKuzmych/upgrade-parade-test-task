@@ -9,6 +9,10 @@ export const Search = () => {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
+    if (!query) {
+      navigate('/');
+      return;
+    }
     navigate(`?query=${query}`);
   };
 

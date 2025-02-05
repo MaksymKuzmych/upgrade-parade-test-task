@@ -10,7 +10,7 @@ export const IconButton = ({ icon, alt, onClick, disabled = false }: IIconButton
     <button
       onClick={onClick}
       disabled={disabled}
-      className='cursor-pointer rounded bg-gray-200 p-3 active:bg-yellow-400 disabled:cursor-not-allowed disabled:bg-gray-300'
+      className='flex h-10 w-10 cursor-pointer items-center justify-center rounded bg-gray-200 active:bg-yellow-400 disabled:cursor-not-allowed disabled:bg-gray-300'
     >
       <img src={icon} alt={alt} />
     </button>

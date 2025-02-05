@@ -58,7 +58,7 @@ export const Table = () => {
             <tr key={headerGroup.id} className='divide-x divide-gray-400'>
               {headerGroup.headers.map((header) => {
                 return (
-                  <th key={header.id} colSpan={header.colSpan} className='px-8 py-4 text-start'>
+                  <th key={header.id} colSpan={header.colSpan} className='px-8 py-5 text-start'>
                     {header.isPlaceholder
                       ? null
                       : flexRender(header.column.columnDef.header, header.getContext())}
