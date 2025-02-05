@@ -4,5 +4,6 @@ import Delete from './delete.svg';
 import Edit from './edit.svg';
 import ImagePlaceholder from './image-placeholder.svg';
 import Alert from './alert.svg';
+import Search from './search.svg';
 
-export { ArrowLeft, ArrowRight, Delete, Edit, ImagePlaceholder, Alert };
+export { ArrowLeft, ArrowRight, Delete, Edit, ImagePlaceholder, Alert, Search };

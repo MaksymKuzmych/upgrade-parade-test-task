@@ -27,7 +27,7 @@ export const ChangePageInput = ({ value, max, setPageIndex }: IChangePageInputPr
       max={max}
       value={value}
       onChange={handlePageChange}
-      className='w-20 rounded border border-gray-400 p-2 text-center text-sm'
+      className='w-20 rounded border border-gray-400 p-2 text-center text-sm focus:outline-0'
     />
   );
 };

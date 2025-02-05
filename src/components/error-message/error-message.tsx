@@ -8,7 +8,7 @@ export const ErrorMessage = ({
   message = 'Something went wrong. Please try again.',
 }: IErrorMessageProps) => {
   return (
-    <div className='m-8 flex flex-col items-center'>
+    <div className='flex flex-col items-center'>
       <div
         className='flex items-center gap-2 rounded border border-red-400 bg-red-100 px-4 py-2 text-red-700'
         role='alert'
