@@ -16,7 +16,7 @@ export const PageSizeSelect = ({ pageSize, setPageSize }: IPageSizeSelectProps) 
           id='pageSizeSelect'
           value={pageSize}
           onChange={(e) => setPageSize(+e.target.value)}
-          className='w-14 py-2 text-sm'
+          className='w-14 py-2 text-sm focus:outline-0'
         >
           {pageSizes.map((size) => (
             <option key={size} value={size}>

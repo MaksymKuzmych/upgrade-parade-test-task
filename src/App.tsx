@@ -1,13 +1,16 @@
+import { Route, Routes } from 'react-router';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
-import { Table } from './components';
+import { ProductList } from './screens';
 
 const queryClient = new QueryClient();
 
 const App = () => {
   return (
     <QueryClientProvider client={queryClient}>
-      <Table />
+      <Routes>
+        <Route path='/' element={<ProductList />} />
+      </Routes>
     </QueryClientProvider>
   );
 };

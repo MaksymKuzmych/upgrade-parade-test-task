@@ -35,10 +35,13 @@ export const Table = () => {
         typeof updaterOrValue === 'function'
           ? updaterOrValue(table.getState().pagination)
           : updaterOrValue;
-      setSearchParams({
-        pageIndex: newState.pageIndex.toString(),
-        pageSize: newState.pageSize.toString(),
-      });
+
+      const currentParams = new URLSearchParams(location.search);
+
+      currentParams.set('pageIndex', newState.pageIndex.toString());
+      currentParams.set('pageSize', newState.pageSize.toString());
+
+      setSearchParams(currentParams);
     },
     getCoreRowModel: getCoreRowModel(),
     manualPagination: true,
@@ -48,7 +51,7 @@ export const Table = () => {
   if (isError) return <ErrorMessage message={error.message} />;
 
   return (
-    <div className='m-8 border border-gray-400'>
+    <div className='mb-14 border border-gray-400'>
       <table className='w-full'>
         <thead className='bg-gray-700 text-sm font-medium text-white'>
           {table.getHeaderGroups().map((headerGroup) => (
